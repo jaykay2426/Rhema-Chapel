@@ -104,7 +104,7 @@ const departments = [
 
 export default function Departments() {
   return (
-    <main className="overflow-hidden bg-[#0B0B0B] text-white pt-32">
+    <main className="overflow-hidden bg-[#0B0B0B] text-white">
 
       {/* ================= HERO ================= */}
 

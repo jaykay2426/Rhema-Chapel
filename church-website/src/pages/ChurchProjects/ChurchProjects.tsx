@@ -82,7 +82,7 @@ export default function ChurchProjects() {
 
 return (
 
-<main className="overflow-hidden bg-[#0B0B0B] text-white pt-35">
+<main className="overflow-hidden bg-[#0B0B0B] text-white pt-5">
 
 
 {/* HERO */}

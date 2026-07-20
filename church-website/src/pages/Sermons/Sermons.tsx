@@ -3,7 +3,7 @@ import { Play, Radio } from "lucide-react";
 
 export default function Sermons() {
   return (
-    <main className="overflow-hidden bg-[#0B0B0B] text-white pt-32">
+    <main className="overflow-hidden bg-[#0B0B0B] text-white pt-3">
 
       {/* HERO */}
       <section className="relative flex min-h-screen items-center">

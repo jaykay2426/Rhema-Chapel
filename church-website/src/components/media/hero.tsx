@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-[#C1121F]/20 blur-[120px]" />
       <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-[#C1121F]/10 blur-[140px]" />
 
-      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-20 lg:px-10">
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-10 lg:px-10">
 
         <div className="max-w-3xl">
 

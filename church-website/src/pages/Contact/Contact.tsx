@@ -19,7 +19,7 @@ export default function Contact() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8 }}
-      className="relative overflow-hidden bg-black py-24"
+      className="relative overflow-hidden bg-black"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(10,61,145,0.15),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(193,18,31,0.15),transparent_35%)]" />
