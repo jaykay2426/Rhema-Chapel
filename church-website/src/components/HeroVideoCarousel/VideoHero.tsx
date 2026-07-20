@@ -83,7 +83,7 @@ export default function VideoHero() {
             transition={{ duration: .6 }}
             className="mb-6 uppercase tracking-[0.5em] text-[#C1121F]"
           >
-            RHEMA CHAPEL INTERNATIONAL
+            RHEMA CHAPEL INTERNATIONAL CHURCHES, IKORODU
           </motion.p>
 
           <AnimatePresence mode="wait">
