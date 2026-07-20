@@ -8,13 +8,18 @@ import {
 
 import churchLogo from "../../assets/logo/thea.png";
 
-const links = [
+interface NavLinkType {
+  name: string;
+  path: string;
+}
+
+const links: NavLinkType[] = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Sermons", path: "/sermons" },
   { name: "Departments", path: "/departments" },
   { name: "Projects", path: "/projects" },
-  { name: "/media", path: "/social-media", label: "Media" },
+  { name: "Media", path: "/social-media" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -68,13 +73,9 @@ const Navbar = () => {
 
           <nav className="hidden -ml-[10px] items-center gap-8 lg:flex">
 
-            {links.map((link) => {
-              const label =
-                "label" in link ? link.label : link.name;
-
-              return (
+            {links.map((link) => (
                 <NavLink
-                  key={label}
+                  key={link.name}
                   to={link.path}
                   className={({ isActive }) =>
   `group relative overflow-hidden rounded-xl px-5 py-3 text-[18px] font-semibold transition-all duration-500 ${
@@ -84,12 +85,11 @@ const Navbar = () => {
   }`
 }
                 >
-                  {label}
+                  {link.name}
 
                   <span className="absolute bottom-0 left-0 h-[3px] w-0 rounded-full bg-[#C1121F] transition-all duration-300 group-hover:w-full"></span>
                 </NavLink>
-              );
-            })}
+              ))}
           </nav>
 
           {/* Right Side */}
@@ -154,13 +154,9 @@ const Navbar = () => {
           </div>
                     <div className="flex flex-col gap-2 px-6 py-8">
 
-            {links.map((link) => {
-              const label =
-                "label" in link ? link.label : link.name;
-
-              return (
+            {links.map((link) => (
                 <NavLink
-                  key={label}
+                  key={link.name}
                   to={link.path}
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) =>
@@ -171,10 +167,9 @@ const Navbar = () => {
                     }`
                   }
                 >
-                  {label}
+                  {link.name}
                 </NavLink>
-              );
-            })}
+              ))}
 
             <button className="mt-8 flex items-center justify-center gap-3 rounded-xl bg-[#0A3D91] px-6 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#C1121F]">
 
