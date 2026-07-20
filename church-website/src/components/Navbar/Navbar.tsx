@@ -48,7 +48,7 @@ const Navbar = () => {
   : "border-b border-transparent bg-white/90 backdrop-blur-xl"
         }`}
       >
-        <div className="flex h-24 w-full items-center justify-between px-8 xl:px-16 2xl:px-24">
+        <div className="flex h-28 w-full items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
   <div className="absolute left-1/4 top-0 h-32 w-32 rounded-full bg-[#0A3D91]/10 blur-3xl animate-pulse" />
   <div className="absolute right-1/4 top-0 h-32 w-32 rounded-full bg-[#C1121F]/10 blur-3xl animate-pulse delay-700" />
@@ -63,7 +63,7 @@ const Navbar = () => {
             <img
               src={churchLogo}
               alt="Church Logo"
-              className="h-16 w-auto object-contain transition-all duration-500 hover:scale-110 hover:-rotate-2 hover:drop-shadow-[0_10px_30px_rgba(193,18,31,0.45)]"
+              className="h-30 w-auto object-contain transition-all duration-500 hover:scale-110 hover:drop-shadow-[0_10px_30px_rgba(193,18,31,0.45)]"
             />
 
             
@@ -128,7 +128,7 @@ const Navbar = () => {
               <img
                 src={churchLogo}
                 alt="Logo"
-                className="h-12 w-auto"
+                className="h-20 sm:h-24 lg:h-40 w-auto object-contain transition-all duration-500 hover:scale-110 hover:drop-shadow-[0_10px_30px_rgba(193,18,31,0.45)]"
               />
 
               <div>

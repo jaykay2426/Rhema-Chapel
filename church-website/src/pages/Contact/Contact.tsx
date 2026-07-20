@@ -27,7 +27,7 @@ export default function Contact() {
       <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#0A3D91]/20 blur-[150px]" />
       <div className="absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#C1121F]/20 blur-[150px]" />
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-6 pt-12">
         <SectionHeading
           title="Contact Us"
           subtitle="We would love to hear from you."

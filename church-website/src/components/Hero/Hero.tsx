@@ -48,7 +48,9 @@ const features = [
 const Hero = () => {
   return (
     <>
-      <VideoHero />
+      <div className="pt-10">
+        <VideoHero />
+    </div>
 
       <section className="relative min-h-screen overflow-hidden bg-[#0B0B0B] pt-18 lg:pt-0 text-white">
       {/* Background */}

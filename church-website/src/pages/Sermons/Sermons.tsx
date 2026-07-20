@@ -3,7 +3,7 @@ import { Play, Radio } from "lucide-react";
 
 export default function Sermons() {
   return (
-    <main className="overflow-hidden bg-[#0B0B0B] text-white">
+    <main className="overflow-hidden bg-[#0B0B0B] text-white pt-32">
 
       {/* HERO */}
       <section className="relative flex min-h-screen items-center">
@@ -105,7 +105,7 @@ export default function Sermons() {
                   y: 0,
                 },
               }}
-              className="mt-10 max-w-2xl text-lg leading-9 text-gray-300"
+              className="mt-5 max-w-2xl text-lg leading-9 text-gray-300"
             >
               Explore powerful sermons, Bible teachings, and inspiring messages
               designed to strengthen your faith, encourage your heart, and help
@@ -123,7 +123,7 @@ export default function Sermons() {
                   y: 0,
                 },
               }}
-              className="mt-12 flex flex-wrap gap-5"
+              className="mt-8 flex flex-wrap gap-5"
             >
 
               <motion.button
@@ -166,7 +166,7 @@ export default function Sermons() {
               transition={{
                 delay: 1,
               }}
-              className="mt-20 flex flex-wrap gap-10"
+              className="mt-10 flex flex-wrap gap-10"
             >
 
               <div>
@@ -454,35 +454,35 @@ export default function Sermons() {
         },
         {
           title: "Living By The Word",
-          speaker: "Pastor Gbega",
+          speaker: "Pastor Gbenga Oladipo",
           date: "Midweek Service",
           image:
             "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1200&auto=format&fit=crop",
         },
         {
           title: "Kingdom Living",
-          speaker: "Guest Minister",
+          speaker: "Minister Kemi Oladele",
           date: "Conference",
           image:
             "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
         },
         {
           title: "Walking In Grace",
-          speaker: "Rev. George Adegboye",
+          speaker: "Minister Segun Ogunnusi",
           date: "Sunday Service",
           image:
             "https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200&auto=format&fit=crop",
         },
         {
           title: "The Power Of Prayer",
-          speaker: "Pastor Emmanuel",
+          speaker: "Minister Henry Ikudogwu",
           date: "Prayer Meeting",
           image:
             "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1200&auto=format&fit=crop",
         },
         {
           title: "Living Victoriously",
-          speaker: "Pastor Wisdom",
+          speaker: "Minister Muyiwa Taiwo",
           date: "Sunday Service",
           image:
             "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop",
