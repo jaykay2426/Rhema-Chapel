@@ -4,21 +4,21 @@ import { CalendarDays, Clock3 } from "lucide-react";
 
 const services = [
   {
-    day: "Sunday",
-    title: "Superlative Anointing for Success",
-    time: "1st Service • 8:00 AM - 9:15 AM\n2nd Service • 9:15 AM - 11:00 AM",
+    day: "Every Sunday",
+    title: "Superlative Anointing Service",
+    time: "Anointing Service • 9:00 AM - 11:30 AM",
     verse: "Come expecting transformation and divine encounters.",
     color: "from-red-500 to-pink-500",
   },
   {
     day: "Wednesday",
     title: "Midweek Service",
-    time: "6:30 PM - 8:00 PM",
+    time: "5:30 PM - 6:30 PM",
     verse: "Recharge your faith through worship and the Word.",
     color: "from-blue-500 to-cyan-500",
   },
   {
-    day: "Friday",
+    day: "Last Friday",
     title: "Victory Hour Prayer Meeting",
     time: "6:00 PM - 7:00 PM",
     verse: "A powerful hour dedicated to prayer and breakthrough.",

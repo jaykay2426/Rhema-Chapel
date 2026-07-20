@@ -16,6 +16,10 @@ import {
   Clock3,
   MapPin,
 } from "lucide-react";
+import VideoHero from "../../components/HeroVideoCarousel/VideoHero";
+
+
+
 
 const features = [
   {
@@ -43,8 +47,10 @@ const features = [
 
 const Hero = () => {
   return (
-    
-    <section className="relative min-h-screen overflow-hidden bg-[#0B0B0B] pt-18 lg:pt-0 text-white">
+    <>
+      <VideoHero />
+
+      <section className="relative min-h-screen overflow-hidden bg-[#0B0B0B] pt-18 lg:pt-0 text-white">
       {/* Background */}
       
       {/* Background */}
@@ -755,9 +761,10 @@ const Hero = () => {
 
   </div>
 </motion.section>
-    </section>
-    
-  );
+</section>
+
+</>
+);
 };
 
 export default Hero;
