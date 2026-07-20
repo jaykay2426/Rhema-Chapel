@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Church,
   MapPin,
@@ -51,12 +52,12 @@ export default function Footer() {
             <img
               src={churchLogo}
               alt="logo"
-              className="h-24 w-auto"
+              className="h-44 w-auto"
             />
 
-            <h2 className="mt-8 text-5xl font-black">
+            <h2 className="text-5xl font-black">
 
-              RHEMA
+              RHEMA CHAPEL
 
             </h2>
 
@@ -82,11 +83,11 @@ export default function Footer() {
                 y: -5,
               }}
 
-              className="mt-10 rounded-[30px] border border-white/10 bg-white/5 p-7 backdrop-blur-xl"
+              className="mt-5 rounded-[30px] border border-white/10 bg-white/5 p-7 backdrop-blur-xl"
 
             >
 
-              <Church className="mb-5 text-[#C1121F]" />
+              <Church className="text-[#C1121F]" />
 
               <p className="italic leading-8 text-gray-300">
 
@@ -118,23 +119,19 @@ export default function Footer() {
             <div className="space-y-4">
 
               {[
-                "Home",
-                "About",
-                "Sermons",
-                "Departments",
-                "Projects",
-                "Media",
-                "Contact",
+                { name: "Home", path: "/" },
+                { name: "About", path: "/about" },
+                { name: "Sermons", path: "/sermons" },
+                { name: "Departments", path: "/departments" },
+                { name: "Projects", path: "/projects" },
+                { name: "Media", path: "/social-media" },
+                { name: "Contact", path: "/contact" },
               ].map((item) => (
 
-                <motion.a
-                  key={item}
-                  href="#"
-                  whileHover={{
-                    x: 10,
-                    color: "#C1121F",
-                  }}
-                  className="group flex items-center gap-4 text-gray-400 transition"
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="group flex items-center gap-4 text-gray-400 transition hover:text-[#C1121F]"
                 >
 
                   <motion.div
@@ -147,9 +144,9 @@ export default function Footer() {
                     className="h-2 w-2 rounded-full bg-[#C1121F]"
                   />
 
-                  {item}
+                  {item.name}
 
-                </motion.a>
+                </Link>
 
               ))}
 

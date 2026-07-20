@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ServiceCarousel from "./ServiceCarousel";
 import {
   Church,
@@ -16,7 +17,7 @@ import {
   Clock3,
   MapPin,
 } from "lucide-react";
-import VideoHero from "../../components/HeroVideoCarousel/VideoHero";
+import VideoHero from "../HeroVideoCarousel/VideoHero";
 
 
 
@@ -193,17 +194,19 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
         className="mt-12 flex gap-5"
       >
-        <motion.button
-          whileHover={{
-            scale: 1.08,
-            y: -4,
-            boxShadow: "0px 15px 35px rgba(193,18,31,.45)",
-          }}
-          whileTap={{ scale: .95 }}
-          className="rounded-full bg-[#C1121F] px-8 py-4 font-semibold"
-        >
-          Plan Your Visit
-        </motion.button>
+        <Link to="/contact">
+          <motion.button
+            whileHover={{
+              scale: 1.08,
+              y: -4,
+              boxShadow: "0px 15px 35px rgba(193,18,31,.45)",
+            }}
+            whileTap={{ scale: .95 }}
+            className="rounded-full bg-[#C1121F] px-8 py-4 font-semibold"
+          >
+            Plan Your Visit
+          </motion.button>
+        </Link>
 
         <motion.button
           whileHover={{

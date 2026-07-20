@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import RhemaChapel from "../../assets/images/rhema.jpeg";
 import RhemaMain from "../../assets/images/rhemachapel.jpeg";
@@ -611,13 +612,17 @@ with you.
 
 <div className="mt-14 flex flex-wrap justify-center gap-6">
 
+<Link to="/contact">
 <button className="rounded-full bg-[#C1121F] px-10 py-5 font-semibold transition hover:scale-105">
 Plan Your Visit
 </button>
+</Link>
 
+<Link to="/contact">
 <button className="rounded-full border border-white/20 px-10 py-5 font-semibold transition hover:border-[#C1121F]">
 Contact Us
 </button>
+</Link>
 
 </div>
 
